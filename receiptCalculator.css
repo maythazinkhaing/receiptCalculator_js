@@ -1,0 +1,111 @@
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100%;
+    background-color: #ff97a5;
+    background-repeat:no-repeat ;
+    display: inline-table;
+    font-family: Arial, Helvetica, sans-serif;
+}   
+
+.container{
+    margin: auto;
+    margin-top: 10px;
+    background-image:  url(pinkblur.png);
+    background-position: center;
+    background-size:inherit ;
+    width: 600px;
+    height: 400px;
+    box-shadow: 0 0 5px 1px rgba(0,0,0, .43);
+    border-radius: 15px;
+    overflow-y: auto;
+    color: black;
+   
+    
+}
+
+
+
+.table1{
+    margin-top: 15px;
+    
+}
+
+.table1 table{
+    
+   margin: auto;
+    margin-top: 10px;
+    
+}
+
+.table1 table th,
+.table1 table td{
+    padding: 5px;
+}
+
+
+.table2 {
+   
+  width: 100%;
+   margin-top: 10px;
+   padding: 10px;
+ 
+}
+
+
+.table2 td {
+padding: 10px;
+text-align: center;
+}
+
+button{
+    background-color:transparent;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+    border: 2px solid white;
+    padding: 4px 15px;
+    transition-duration: .4s;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: white;
+    color:#ff97a5;;
+    
+}
+
+.grand {
+    margin: 10px auto;
+    width: 100%;
+    display: inline-flex;
+
+}
+
+
+
+.grandBtn{
+    width: 210px;
+    margin-left: auto;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.grandTextcontainer {
+   
+    background-color: white;
+    width: 200px;
+    height: 35px;
+    margin-right: auto;
+    padding-top: 15px;
+    text-align:center;
+}
+
+#grandText{
+    width: 100%;
+    margin:auto;
+    font-weight: bold;
+    font-size: 20px;
+}
+
