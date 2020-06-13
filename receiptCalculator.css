@@ -5,9 +5,12 @@ body{
     width: 100%;
     background-color: #ff97a5;
     background-repeat:no-repeat ;
-    display: inline-table;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     font-family: Arial, Helvetica, sans-serif;
 }   
+
 
 .container{
     margin: auto;
@@ -21,7 +24,7 @@ body{
     border-radius: 15px;
     overflow-y: auto;
     color: black;
-   
+  
     
 }
 
@@ -29,9 +32,8 @@ body{
 
 .table1{
     margin-top: 15px;
-    
+   
 }
-
 .table1 table{
     
    margin: auto;
@@ -109,3 +111,18 @@ button:hover {
     font-size: 20px;
 }
 
+/*@@@@@@@@@@@@@@@@ Mobile @@@@@@@@@@@@@@@*/
+
+@media screen and (max-device-width: 480px){
+.container{
+    height: 600px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.table2 th,
+.table2 td {
+    font-size: 25px;
+}
+
+}
