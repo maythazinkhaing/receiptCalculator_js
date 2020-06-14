@@ -6,42 +6,66 @@
         
     </head>
     <body>
-       <div>
-        <div class="table1">
-            <table >
-              <tr>
-                  <th>Product</th>
-                  <th>Quantity</th>
-                  <th>Price</th>
-              </tr>
-              <tr>
-                  <td><input type="text" id="product"></td>
-                  <td><input type="text" id="qty"></td>
-                  <td><input type="text" id="price"></td>
-                  <td><button id="addBtn">ADD</button></td>
-              </tr>
-           </table>
-        </div>
-        
-        
-        <div class="container">
-         
-            <table class="table2" id="table2">
-                <tr>
-                    <th style="width: 150px;">Product</th>
-                    <th>Qty</th>
-                    <th>Price</th>
-                    <th>Total</th>
-                </tr>
-               
-             </table>
-        </div>
-        <div class="grand">
+       <div class="row">
             
-            <button class="grandBtn" id="grandBtn">Grand Total</button>
-            <div class="grandTextcontainer"><span id="grandText"></span></div>
-            
-        </div>
+                <div class="col-4">
+                    <table class="table1" cellspacing="25">
+                        <tr>
+                            <th>Product</th>
+                            <td><input type="text" id="product"></td>
+                        </tr>
+                        <tr>
+                           
+                            <th>Quantity</th>
+                            <td><input type="text" id="qty"></td>
+                        </tr>
+                       
+                        <tr>
+                            
+                            <th>Price</th>
+                            <td><input type="text" id="price"></td>
+                        </tr>
+                    
+                        <tr>
+                            <td colspan="2"><button id="addBtn">ADD</button></td>
+                        </tr>
+                    </table>
+                </div>
+             
+        
+            <div class="col-8">
+                <div class="imgClass">
+                    <img src="pink.png" alt="">
+                  <div>
+                        <h2>iBeauty Online Shop </h2>
+                      <h3>Beauty, Cosmetic & Personal Care </h3>
+                    </div>
+                </div>
+
+                <div class="container">
+                       
+                     <table class="table2" id="table2">
+                        <tr>
+                            <th style="width: 50px;">No.</th>
+                            <th style="width: 170px;">Product</th>
+                            <th style="width: 50px;">Qty</th>
+                            <th style="width: 130px;">Price</th>
+                            <th>Total</th>
+                        </tr>
+                    
+                     </table>
+                </div>
+                 <div class="grand">
+                
+                    <button class="grandBtn" id="grandBtn">Grand Total</button>
+                    <div class="grandTextcontainer"><span id="grandText"></span></div>
+                
+                </div>
+                <div>
+                 <h2> <span>&#128525;</span>Thanks for Shopping with us!</h2>
+                </div>
+            </div>
+           
     </div> 
         <script type="text/javascript" src="receiptCalculator.js"></script>
     </body>

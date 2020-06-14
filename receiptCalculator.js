@@ -4,7 +4,7 @@ btn.addEventListener("click", addToTable);
 
 grandtotalArray =new Array();
 let grandTotal = 0;
-    
+var no = 0;
 function addToTable(){
 
     var product = document.getElementById("product").value;
@@ -18,13 +18,16 @@ function addToTable(){
         alert("plz dont left the text field empty");
     }
     else{
+        no++;
         var newRow = table.insertRow(table.rows.length);
 
-        var cell1 = newRow.insertCell(0);
-        var cell2 = newRow.insertCell(1);
-        var cell3 = newRow.insertCell(2);
-        var cell4 = newRow.insertCell(3);
+        var cell0 = newRow.insertCell(0);
+        var cell1 = newRow.insertCell(1);
+        var cell2 = newRow.insertCell(2);
+        var cell3 = newRow.insertCell(3);
+        var cell4 = newRow.insertCell(4);
 
+        cell0.innerHTML = no+".";
         cell1.innerHTML = product;
         cell2.innerHTML = qty;
         cell3.innerHTML = price;
