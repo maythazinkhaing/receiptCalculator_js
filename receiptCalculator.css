@@ -215,7 +215,17 @@ span{
     height: 600px;
     margin-top: 10px;
     margin-bottom: 5px;
+    width: 650px;
 }
+
+.table2 {
+   
+    width: 90%;
+    margin: auto;
+     margin-top: 10px;
+     padding: 10px;
+      padding-right: 2px;
+  }
 
 .table2 th,
 .table2 td {
