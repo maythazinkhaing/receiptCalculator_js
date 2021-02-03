@@ -16,16 +16,19 @@ function addToTable(){
     var table = document.getElementById("table2") ;
 
     var total = price * qty;
-    
+
+   
     if(product=="" || price=="" || qty==""){
         alert("plz dont left the text field empty");
     }
     else{
+        var x= document.createElement("HR");
+        document.body.appendChild(x);
         
         no++;
         var newRow = table.insertRow(table.rows.length);
         row.push(newRow);
-        console.log("row"+row);
+        
         var cell0 = newRow.insertCell(0);
         var cell1 = newRow.insertCell(1);
         var cell2 = newRow.insertCell(2);
@@ -38,17 +41,18 @@ function addToTable(){
         cell3.innerHTML = price;
         cell4.innerHTML = total;
         
-        if(row.length > 0){
-           cell4.style.textAlign= "right";
-           cell4.style.paddingRight= "40px";
-      }
+    
+        cell4.style.textAlign= "right";
+        cell4.style.paddingRight= "30px";
+      
         grandtotalArray.push(total)
-
+       
         document.getElementById("product").value = "";
         document.getElementById("price").value="";
         document.getElementById("qty").value="";
         console.log(grandtotalArray);
-     
+        
+        
         if(row.length > 8){
           var  h = document.getElementById("con").style.height= "auto";
     }
